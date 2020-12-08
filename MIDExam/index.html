@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- use Bootstrap library -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Learn JavaScript</title>
+	</head>
+	<body>
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-danger	">
+				<a class="navbar-brand" href="#">Student Management MiniApp</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#">About	</a>
+					
+				  </div>
+				</div>
+			</nav>
+	
+			<div class=container>
+                <h1 class="judul">Student Management</h1>	
+                <h1 class="judul">MiniApp</h1>
+                <hr>
+
+                <div class="display container">
+                    <div id="main" class="card card-body">
+                        <h2>Add Student</h2>
+                        <button type="button" id="tampilkan">Show form Add New student</button>
+                        <form name="regis form" id="formRegis" method="POST" action="#">
+                            <label>Nama Anda</label>
+                            <input type="text" name="namaLengkap" id="namaLengkap">
+                            <br>
+                            <label>Alamat Email</label>
+                            <input type="email" name="emailmu" id="emailmu">
+                            <br>
+                            <label>Jenis Kelamin</label>
+                            <input type="radio" name="JK" id="idmu" value="L">Laki-Laki
+                            <input type="radio" name="JK" id="idmu" value="P">Perempuan
+                            <br>
+                            <label>Hobby</label>
+                            <input type="checkbox" name="hobi anda" id="idmu" value="B"> Basket
+                            <input type="checkbox" name="hobi anda" id="idmu" value="G"> Game
+                            <input type="checkbox" name="hobi anda" id="idmu" value="T"> Traveling
+                            <br>
+    
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+		  
+		<script src="dom.js"></script>
+	</body>
+</html>
